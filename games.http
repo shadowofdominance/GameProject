@@ -1,4 +1,35 @@
 GET http://localhost:5114/games
 
 ###
-GET http://localhost:5114/games/3
+GET http://localhost:5114/games/1
+
+###
+POST http://localhost:5114/games
+Content-Type: application/json
+
+{
+  "name": "ETS 2",
+  "genre": "Simulation",
+  "price": 50,
+  "releaseDate": "2012-10-20"
+}
+
+###
+PUT http://localhost:5114/games/1
+Content-Type: application/json
+
+{
+  "name": "Mafia 1 Definitive Edition",
+  "genre": "Open World",
+  "price": 55,
+  "releaseDate": "2010-10-20"
+}
+
+###
+GET http://localhost:5114/games
+
+###
+DELETE http://localhost:5114/games/1
+
+###
+GET http://localhost:5114/games
