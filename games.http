@@ -8,14 +8,14 @@ POST http://localhost:5114/games
 Content-Type: application/json
 
 {
-  "name": "ETS 2",
+  "name": "",
   "genre": "Simulation",
-  "price": 50,
+  "price": 5000,
   "releaseDate": "2012-10-20"
 }
 
 ###
-PUT http://localhost:5114/games/1
+PUT http://localhost:5114/games/6
 Content-Type: application/json
 
 {
