@@ -8,9 +8,9 @@ POST http://localhost:5114/games
 Content-Type: application/json
 
 {
-  "name": "",
-  "genre": "Simulation",
-  "price": 5000,
+  "name": "ETS2",
+  "genreId": 3,
+  "price": 50,
   "releaseDate": "2012-10-20"
 }
 

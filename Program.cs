@@ -1,16 +1,14 @@
 using GameProject.Data;
-using GameProject.Dtos;
 using GameProject.Enpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddValidation();
-
-// Connection String before the app object creation
-var connectionString = "Data Source=GameStore.db";
-builder.Services.AddSqlite<GameStoreContext>(connectionString);
+builder.AddGameStoreDb();
 
 var app = builder.Build();
 
 app.MapGamesEnpoints();
+
+app.MigrateDb();
 
 app.Run();
