@@ -1,7 +1,7 @@
 GET http://localhost:5114/games
 
 ###
-GET http://localhost:5114/games/1
+GET http://localhost:5114/games/2
 
 ###
 POST http://localhost:5114/games
@@ -15,14 +15,25 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5114/games/6
+POST http://localhost:5114/games
 Content-Type: application/json
 
 {
-  "name": "Mafia 1 Definitive Edition",
-  "genre": "Open World",
-  "price": 55,
-  "releaseDate": "2010-10-20"
+  "name": "Mario Gokart",
+  "genreId": 2,
+  "price": 50,
+  "releaseDate": "2012-10-20"
+}
+
+###
+PUT http://localhost:5114/games/2
+Content-Type: application/json
+
+{
+  "name": "Mario Gokart",
+  "genreId": 2,
+  "price": 99,
+  "releaseDate": "2012-10-20"
 }
 
 ###
@@ -32,4 +43,4 @@ GET http://localhost:5114/games
 DELETE http://localhost:5114/games/1
 
 ###
-GET http://localhost:5114/games
+GET http://localhost:5114/genres
