@@ -4,6 +4,10 @@ A lightweight, modern RESTful backend API for managing a video game catalog and 
 
 ---
 
+# There is another version of this app with the frontend using Angular. Check it out here [GameProject_FullStack](https://github.com/shadowofdominance/GameProject_FullStack.git).
+
+---
+
 ## 📌 Project Overview
 
 **Game Store API** is an ASP.NET Core web service designed to manage video game listings and genres. Built with a clean, decoupled architecture, it showcases best practices using Minimal APIs, Data Transfer Objects (DTOs), Data Annotation validation, and asynchronous database operations with EF Core.
